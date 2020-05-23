@@ -1,9 +1,9 @@
 // Defines your CLI interface using structopt
 use structopt::StructOpt;
 
-/// TODO:  Add description of your CLI
+/// TODO:  Replace comment with description of your CLI
 #[derive(StructOpt, Debug)]
-#[structopt(name = "TODO: Specify CLI Name")]
+#[structopt(name = "TODO: Replace with CLI name")]
 pub struct App {
     /// Example required input.
     #[structopt(short, long)]
