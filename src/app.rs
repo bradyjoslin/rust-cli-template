@@ -10,10 +10,13 @@ pub struct App {
     pub gimme: String,
 
     /// Example optional input.
-    #[structopt(short, long)]
-    pub perhaps: Option<String>,
+    #[structopt(short, long, default_value)]
+    pub perhaps: String,
 
     /// Verbose output.
     #[structopt(short, long)]
     pub verbose: bool,
+
+    /// Positional input. Required.
+    pub positional: String,
 }

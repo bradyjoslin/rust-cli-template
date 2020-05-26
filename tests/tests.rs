@@ -13,6 +13,7 @@ fn it_helps() {
 fn it_works() {
     Command::cargo_bin(env!("CARGO_PKG_NAME"))
         .unwrap()
+        .arg("Wayne")
         .args(&["--gimme", "Brady"])
         .assert()
         .success();
@@ -22,6 +23,7 @@ fn it_works() {
 fn it_errors_on_bandinput() {
     Command::cargo_bin(env!("CARGO_PKG_NAME"))
         .unwrap()
+        .arg("BadInput")
         .args(&["--gimme", "BadInput"])
         .assert()
         .failure();
