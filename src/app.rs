@@ -3,7 +3,7 @@ use structopt::StructOpt;
 
 /// TODO:  Replace comment with description of your CLI
 #[derive(StructOpt, Debug)]
-#[structopt(name = "TODO: Replace with CLI name")]
+#[structopt(name = env!("CARGO_PKG_NAME"))]
 pub struct App {
     /// Example required input.
     #[structopt(short, long)]
